@@ -188,15 +188,15 @@ class WebGraph():
             new_n = 0
             w_weight = 0
 
-            url = self._index_to_url(i)
-            if is_url_satisfies_query(url, query):
+            url1 = self._index_to_url(i)
+            if is_url_satisfies_query(url1, query):
                 new_n+=1
                 w_weight+=s_weight
 
             for word in range(10):
                 w= S[word][0]
 
-                if is_url_satisfies_query(url,w):
+                if is_url_satisfies_query(url1,w):
                     new_n+=1
                     w_weight+=S[word][1]**power
 
