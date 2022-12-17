@@ -10,8 +10,8 @@ import torch
 import gzip
 import csv
 import logging
-import gensim.downloader as gensim
-vectors = gensim.load('word2vec-google-news-300')
+import gensim.downloader
+vectors = gensim.downloader.load('word2vec-google-news-300')
 
 class WebGraph():
 
